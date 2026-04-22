@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/stely.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="indexHome.html">Jujuba Confeitaria</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="indexEncomenda.html">Encomendar <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="indexVerprodutos.html">Ver Produtos</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Menu Completo
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="indexEncomenda.html">Fazer encomenda</a>
+          <a class="dropdown-item" href="indexVerprodutos.html">Ver produtos</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="indexContato.html">Contato</a>
+          <a class="dropdown-item" href="indexCarrinho.html">Carrinho</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+  <div class="container py-5">
+    <h1 class="text-center titulo mb-5">Nosso Cardápio</h1>
+
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <div class="card card-produto h-100">
+              <img src="assets/imagens/tortaalemã.png" class="card-img-top" alt="torta alemã">
+              <div class="card-body text-center">
+                <h5 class="card-title">Torta alemã</h5>
+                <p class="card-text">"Torta Alemã Tradicional: Camadas de biscoito crocante com creme especial à base de manteiga e creme de leite, finalizada com ganache de chocolate premium. Servida gelada. Disponível inteira ou em fatias."</p>
+                <h6 class="mb-3">R$ 80,00</h6>
+                <button class="btn btn-doce w-100" onclick="adicionarCarrinho('torta alemã', 80)">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card card-produto h-100">
+              <img src="assets/imagens/tortaespelhadaMorango.png" class="card-img-top" alt="Torta espelhada de morango">
+              <div class="card-body text-center">
+                <h5 class="card-title">Torta espelhada de morango</h5>
+                <p class="card-text">"Torta Espelhada de Morango: Base crocante de biscoito amanteigado, recheio cremoso tipo pâtissière e cobertura de morangos frescos com geleia de brilho artesanal. Leve, refrescante."
+</p>
+                <h6 class="mb-3">R$ 80,00</h6>
+                <button class="btn btn-doce w-100" onclick="adicionarCarrinho('torta espelhada de morango', 80)">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card card-produto h-100">
+              <img src="assets/imagens/banoffeeCortada.png" class="card-img-top" alt="Banoffee">
+              <div class="card-body text-center">
+                <h5 class="card-title">Banoffee</h5>
+                <p class="card-text">harmonia entre texturas e sabores. Seu nome é a junção de seus dois ingredientes principais: banana e toffee (caramelo/doce de leite)</p>
+                <h6 class="mb-3">R$ 70,00</h6>
+                <button class="btn btn-doce w-100" onclick="adicionarCarrinho('Banoffee', 70)">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card card-produto h-100">
+              <img src="assets/imagens/portaamendoim.png" class="card-img-top" alt="Torta delírio de amendoim">
+              <div class="card-body text-center">
+                <h5 class="card-title">Torta Delírio de Amendoim, destacando suas camadas cremosas e o acabamento crocante.</h5>
+                <p class="card-text">Equilíbrio perfeito.</p>
+                <h6 class="mb-3">R$ 70,00</h6>
+                <button class="btn btn-doce w-100" onclick="adicionarCarrinho('Torta delírio de amendoim', 70)">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-md-6">
+            <div class="card card-produto h-100">
+              <img src="assets/imagens/empadaoFrango.png" class="card-img-top" alt="Empadão Frango c/ Catupiry">
+              <div class="card-body text-center">
+                <h5 class="card-title">Empadão Frango c/ Catupiry</h5>
+                <p class="card-text">"Empadão de Frango com Catupiry: Massa amanteigada tradicional, recheio de frango desfiado temperado e camada de Catupiry®. Disponível em fatias ou inteiro (sob encomenda).</p>
+                <h6 class="mb-3">R$ 50,00</h6>
+                <button class="btn btn-doce w-100" onclick="adicionarCarrinho('Empadão Frango c/ Catupiry', 50)">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card card-produto h-100">
+              <img src="assets/imagens/salgadinho1.jpg" class="card-img-top" alt="Salgadinhos Fritos (Sortidos)">
+              <div class="card-body text-center">
+                <h5 class="card-title">Salgadinhos Fritos (Sortidos)</h5>
+                <p class="card-text">"Salgadinhos fritos (sob encomenda).</p>
+                <h6 class="mb-3">R$ 60,00 100un</h6>
+                <button class="btn btn-doce w-100" onclick="adicionarCarrinho('Salgadinhos Fritos (Sortidos)', 60)">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="carrinho-box">
+          <h3 class="titulo mb-3">Carrinho</h3>
+          <div id="carrinho-itens"></div>
+
+          <hr>
+
+          <h5>Total: R$ <span id="total">0.00</span></h5>
+
+          <button class="btn btn-whats w-100 mt-3" onclick="finalizarWhatsApp()">
+            Finalizar pelo WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let carrinho = [];
+
+    function adicionarCarrinho(nome, preco) {
+      const itemExistente = carrinho.find(item => item.nome === nome);
+
+      if (itemExistente) {
+        itemExistente.quantidade++;
+      } else {
+        carrinho.push({ nome, preco, quantidade: 1 });
+      }
+
+      atualizarCarrinho();
+    }
+
+    function aumentarQuantidade(nome) {
+      const item = carrinho.find(item => item.nome === nome);
+      if (item) {
+        item.quantidade++;
+      }
+      atualizarCarrinho();
+    }
+
+    function diminuirQuantidade(nome) {
+      const item = carrinho.find(item => item.nome === nome);
+      if (item) {
+        item.quantidade--;
+        if (item.quantidade <= 0) {
+          carrinho = carrinho.filter(item => item.nome !== nome);
+        }
+      }
+      atualizarCarrinho();
+    }
+
+    function removerItem(nome) {
+      carrinho = carrinho.filter(item => item.nome !== nome);
+      atualizarCarrinho();
+    }
+
+    function atualizarCarrinho() {
+      const carrinhoItens = document.getElementById("carrinho-itens");
+      const totalElemento = document.getElementById("total");
+
+      carrinhoItens.innerHTML = "";
+      let total = 0;
+
+      if (carrinho.length === 0) {
+        carrinhoItens.innerHTML = "<p class='text-muted'>Seu carrinho está vazio.</p>";
+      }
+
+      carrinho.forEach(item => {
+        total += item.preco * item.quantidade;
+
+        carrinhoItens.innerHTML += `
+          <div class="item-carrinho">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <strong>${item.nome}</strong><br>
+                <small>R$ ${item.preco.toFixed(2)} cada</small>
+              </div>
+              <button class="btn-remover" onclick="removerItem('${item.nome}')">Remover</button>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div class="quantidade-box d-flex align-items-center gap-2">
+                <button onclick="diminuirQuantidade('${item.nome}')">-</button>
+                <span>${item.quantidade}</span>
+                <button onclick="aumentarQuantidade('${item.nome}')">+</button>
+              </div>
+              <strong>R$ ${(item.preco * item.quantidade).toFixed(2)}</strong>
+            </div>
+          </div>
+        `;
+      });
+
+      totalElemento.textContent = total.toFixed(2);
+    }
+
+    function finalizarWhatsApp() {
+      if (carrinho.length === 0) {
+        alert("Seu carrinho está vazio.");
+        return;
+      }
+
+      let mensagem = "Olá! Gostaria de fazer o seguinte pedido:%0A%0A";
+
+      carrinho.forEach(item => {
+        mensagem += `- ${item.nome} | Qtd: ${item.quantidade} | Subtotal: R$ ${(item.preco * item.quantidade).toFixed(2)}%0A`;
+      });
+
+      const total = carrinho.reduce((acc, item) => acc + (item.preco * item.quantidade), 0);
+      mensagem += `%0ATotal: R$ ${total.toFixed(2)}`;
+
+      const numero = "5547999999999";
+      const link = `https://wa.me/${numero}?text=${mensagem}`;
+
+      window.open(link, "_blank");
+    }
+
+    atualizarCarrinho();
+  </script>
+
+</body>
+</html>

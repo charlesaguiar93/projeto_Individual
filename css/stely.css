@@ -1,0 +1,253 @@
+html, body {
+    height: 100%;
+}
+
+
+body {
+  
+  background-image: url('');
+
+}
+
+.upload-box {
+  border: 2px dashed #e0b7a3;
+  border-radius: 10px;
+  background-color: #f8f1ed;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  background-color: #f3e6df;
+}
+
+.upload-box.dragover {
+  border-color: #c98b6f;
+  background-color: #f0ddd4;
+}
+
+ body {
+      background: #fff8f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .titulo {
+      color: #8b5e4a;
+      font-weight: bold;
+    }
+
+    .card-produto {
+      border: none;
+      border-radius: 18px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card-produto:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-produto img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    
+    .carrinho-box {
+      background: white;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+      position: sticky;
+      top: 20px;
+    }
+
+    .item-carrinho {
+      border-bottom: 1px solid #f1dfd8;
+      padding: 10px 0;
+    }
+
+    .quantidade-box button {
+      width: 30px;
+      height: 30px;
+      border: none;
+      background: #f3d7cb;
+      color: #6f4a3a;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-remover {
+      background: #f8d7da;
+      color: #842029;
+      border: none;
+      border-radius: 8px;
+      padding: 4px 8px;
+      font-size: 14px;
+    }
+
+   
+  
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+body {
+    /* Substitua 'nome-da-imagem.jpg' pelo nome real do arquivo que você salvou */
+    background-image: url('../assets/imagens/imagem-elegante1.png'); 
+    
+    /* Faz a imagem cobrir a tela inteira sem repetir */
+    background-size: cover; 
+    
+    /* Mantém o fundo fixo enquanto você rola a página */
+    background-attachment: fixed; 
+    
+    /* Centraliza a imagem */
+    background-position: center; 
+    
+    /* Cor de fundo caso a imagem demore a carregar */
+    background-color: #fdf5e6; 
+    
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dica: Para o conteúdo não sumir no fundo escuro, adicione um fundo leve no container principal */
+main {
+    background: rgba(255, 255, 255, 0.9); /* Branco com 100% de transparência */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.media-body {
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.container h1, .container h3 {
+    color: #8b5e4a; /* Cor marrom suave para os títulos */
+}
+
+.media-body h5 {
+    color: #8b5e4a; /* Cor marrom suave para o título do media body */
+}
+
+p {
+    color: #6f4a3a; /* Cor marrom mais escura para os parágrafos */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0.9) !important; /* Fundo branco com transparência para a jumbotron */
+    border: 2px solid #e0b7a3 !important; /* Borda suave para destacar a jumbotron */
+}
+
+.jumbotron {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important; /* Sombra para dar profundidade */    
+}
+
+.jumbotron h1 {
+   background: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+   
+    
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn {
+    color: #8b5e4a; /* Cor marrom suave para os links */
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #c58d77; /* Cor marrom mais clara para o hover */
+    text-decoration: underline;
+}
+.text {
+    color: #6f4a3a; /* Cor marrom mais escura para o texto */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive; /* A fonte estilizada */
+    font-size: 60px;                     /* Tamanho grande para destaque */
+    color: #4e342e;                      /* Um tom marrom café elegante */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Sombra suave para dar profundidade */
+    letter-spacing: 2px;                 /* Espaçamento entre letras */
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif; /* Fonte moderna e legível para o corpo */
+    font-weight: 300;
+    line-height: 1.6;                    /* Espaçamento entre linhas para não cansar a vista */
+    color: #5d4037;
+}
+.letra-especial {
+    font-family: 'Great Vibes', cursive;
+    font-size: 80px;
+    background: linear-gradient(to right, #8e5431, #d4af37); /* Degradê do marrom ao dourado */
+    -webkit-background-clip: text; /* Faz o fundo ficar só na letra */
+     background-clip: text; 
+    -webkit-text-fill-color: transparent; /* Deixa o preenchimento da letra invisível */
+    display: inline-block;
+}
+
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência para o dropdown */
+    border: 1px solid #e0b7a3; /* Borda suave para destacar o dropdown */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra para dar profundidade */
+}
+
+.btn-doce {
+      background: #d8a48f;
+      color: white;
+      border: none;
+    }
+
+    .btn-doce:hover {
+      background: #c58d77;
+      color: white;
+    }
+
+     .btn-whats {
+      background: #25d366;
+      color: white;
+      border: none;
+    }
+
+    .btn-whats:hover {
+      background: #1ebe5d;
+      color: white;
+    }
+
+    .dropdown-menu a {
+      color: #8b5e4a; /* Cor marrom suave para os links do dropdown */
+      text-decoration: none;
+    }
+
+   .dropdown-menu a:hover {
+    color: #c58d77;             /* Cor do Texto (Marrom claro) */
+    text-decoration: none;      /* Remove o sublinhado padrão */
+    border-bottom: 2px solid #d4af37; /* Cor da Linha (ex: Dourado) */
+    padding-bottom: 2px;        /* Espaço entre o texto e a linha */
+}
