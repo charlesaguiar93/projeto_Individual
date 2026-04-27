@@ -99,7 +99,7 @@ body {
 }
 
 body {
-    /* Substitua 'nome-da-imagem.jpg' pelo nome real do arquivo que você salvou */
+    /* Substitua 'nome-da-imagem.jpg' pelo nome real do arquivo  salvou */
     background-image: url('../assets/imagens/imagem-elegante1.png'); 
     
     /* Faz a imagem cobrir a tela inteira sem repetir */
@@ -142,6 +142,7 @@ main {
 
 .media-body h5 {
     color: #8b5e4a; /* Cor marrom suave para o título do media body */
+    
 }
 
 p {
@@ -202,6 +203,8 @@ p {
     line-height: 1.6;                    /* Espaçamento entre linhas para não cansar a vista */
     color: #5d4037;
 }
+
+
 .letra-especial {
     font-family: 'Great Vibes', cursive;
     font-size: 80px;
@@ -250,4 +253,46 @@ p {
     text-decoration: none;      /* Remove o sublinhado padrão */
     border-bottom: 2px solid #d4af37; /* Cor da Linha (ex: Dourado) */
     padding-bottom: 2px;        /* Espaço entre o texto e a linha */
+}
+
+.text-center {
+    color: #8b5e4a; 
+  
+   
+}
+
+.header-bolos {
+    background-color: #fffaf5; /* Um creme bem clarinho */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #d4af37; /* Linha dourada fina */
+}
+
+.logo {
+    max-width: 150px; /* Ajusta o tamanho do logo */
+    margin-bottom: 10px;
+}
+
+.slogan-elegante {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 24px;
+    color: #5d4037; /* Marrom café */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #5d4037;
+    font-weight: bold;
+    font-family: 'Cabin', sans-serif;
+}
+.text-center img{
+  border-radius: 30px;
 }
