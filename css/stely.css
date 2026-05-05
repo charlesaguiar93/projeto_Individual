@@ -296,3 +296,20 @@ p {
 .text-center img{
   border-radius: 30px;
 }
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
+    border-radius: 15px;
+    padding: 20px;
+    bottom: 40px; /* Sobe um pouco a legenda */
+}
+
+.carousel-caption h5 {
+    color: #ffc0cb; /* Um tom de rosa para o título */
+    font-weight: bold;
+}
+.carousel-control-prev, .carousel-control-next {
+    background: none; /* Remove o fundo cinza */
+    border: none;
+    width: 5%; /* Deixa a área de clique menor e mais elegante */
+}
